@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:0px; padding:0px; box-sizing: border:box;padding:60px; display:flex; justify-content:center; align-item:center; min-height:90px; background-color:black;}
+        .wrapper{height:500px; width: 500px; position:relative;}
+        .wrapper img{height: 100%; width:100%; margin-top:-50px; position:absolute; }
+        .wrapper label{position:absolute; bottom:0px; left:50%;transform: translate(-50%);   }
+        .wrapper label span{color:white; font-size:30px;text-transform:uppercase; display:block; border:3px solid white; width:180px; height:50px; border-radius:5px; text-align:center; line-height:50px; cursor:pointer; transition: all 0.4s ease;}
+        .wrapper label span::before{content:"Trun Off";}
+        .wrapper label span:hover{background-color:#fff; color:black;}
+        .wrapper img#bulb-on{opacity:0; animation:glow 4s linear infinite; transform:rotate(0.9deg);}
+        .wrapper input{display:none;}
+        @keyframes glow 
+        {0%
+        {opacity:1;}
+    }
+    {5%
+        {opacity:1;}
+    }
+    {60%
+        {opacity:1;}
+    }
+    {74%
+        {opacity:0;}
+    }
+    {80%
+        {opacity:1;}
+    }
+    {90%
+        {opacity:1;}
+    }
+    {100%
+        {opacity:1;}
+    }
+
+    #btn:checked ~ img#bulb-on
+    {animation:none;}
+    .wrapper input
+    {display:none;}
+.btn:checked ~  label span:before
+
+{content:"Turn On"}
+   </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="checkbox" id="btn">
+        <img src="C:\Users\Dell\Desktop\navigation Bar\nib1.jpg"  id="bulb-off">
+        <img src="C:\Users\Dell\Desktop\navigation Bar\nib 2.jpg" id="bulb-on">
+        <label for="btn"><span></span></label>
+
+    </div>
+</body>
+</html>
